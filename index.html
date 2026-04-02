@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sakura - 主页</title>
+        <title>Sakura - 涓婚〉</title>
         
         <script src="anime.js"></script>
         <script>
@@ -23,8 +23,8 @@
                         if(typeof quotes !== 'undefined' && quotes.length > 0) {
                             const randomIndex = Math.floor(Math.random() * quotes.length);
                             const selectedQuote = quotes[randomIndex];
-                            quoteText.textContent = "“" + selectedQuote.text + "”";
-                            quoteAuthor.textContent = "—— " + selectedQuote.author;
+                            quoteText.textContent = "鈥? + selectedQuote.text + "鈥?;
+                            quoteAuthor.textContent = "鈥斺€?" + selectedQuote.author;
                             quoteAuthor.style.display = 'block'; 
                         }
                     });
@@ -45,10 +45,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link active" href="index.html">关于我</a></li>
-                        <li class="nav-item"><a class="nav-link " href="anime.html">喜欢的动漫</a></li>
-                        <li class="nav-item"><a class="nav-link " href="characters.html">喜欢的角色</a></li>
-                        <li class="nav-item"><a class="nav-link " href="games.html">极客/游戏/其他</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="index.html">鍏充簬鎴?/a></li>
+                        <li class="nav-item"><a class="nav-link " href="anime.html">鍠滄鐨勫姩婕?/a></li>
+                        <li class="nav-item"><a class="nav-link " href="characters.html">鍠滄鐨勮鑹?/a></li>
+                        <li class="nav-item"><a class="nav-link " href="games.html">鏋佸/娓告垙/鍏朵粬</a></li>
                     </ul>
                 </div>
             </div>
@@ -57,22 +57,22 @@
         <div class="container pb-5">
 <div class="card mt-4 mx-auto shadow-sm" style="max-width: 800px;">
                         <div class="card-body">
-                            <h3 class="card-title text-center mb-4">关于我</h3>
+                            <h3 class="card-title text-center mb-4">鍏充簬鎴?/h3>
                             <p class="card-text fs-5">
-                                大家好！我叫<strong>Sakura</strong>，是来自武汉一所双非学校的<strong>人工智能专业</strong>学生。<span>Ciallo~(∠・ω< )⌒★</span>
+                                澶у濂斤紒鎴戝彨<strong>Sakura</strong>锛屾槸鏉ヨ嚜姝︽眽涓€鎵€鍙岄潪瀛︽牎鐨?strong>浜哄伐鏅鸿兘涓撲笟</strong>瀛︾敓銆?span>Ciallo~(鈭犮兓蠅< )鈱掆槄</span>
                             </p>
                             <p class="card-text fs-5">
-                                我喜欢二次元的各种事物。在这里记录一下自己的成分：
+                                鎴戝枩娆簩娆″厓鐨勫悇绉嶄簨鐗┿€傚湪杩欓噷璁板綍涓€涓嬭嚜宸辩殑鎴愬垎锛?
                             </p>
                             <ul class="list-group list-group-flush fs-5">
-                                <li class="list-group-item">📺 <strong>最喜欢的动漫：</strong>《无职转生》</li>
-                                <li class="list-group-item">👤 <strong>最喜欢的角色：</strong>黍</li>
-                                <li class="list-group-item">🎮 <strong>最喜欢的游戏：</strong>《赛博朋克2077》</li>
+                                <li class="list-group-item">馃摵 <strong>鏈€鍠滄鐨勫姩婕細</strong>銆婃棤鑱岃浆鐢熴€?/li>
+                                <li class="list-group-item">馃懁 <strong>鏈€鍠滄鐨勮鑹诧細</strong>榛?/li>
+                                <li class="list-group-item">馃幃 <strong>鏈€鍠滄鐨勬父鎴忥細</strong>銆婅禌鍗氭湅鍏?077銆?/li>
                             </ul>
 
                             <p class="card-text fs-6 mt-4">
 
-                                本网站为本人学习cs50后所创,主要运用了bookstrap框架和一些js代码，欢迎大家留言交流！
+                                鏈綉绔欎负鏈汉瀛︿範cs50鍚庢墍鍒?涓昏杩愮敤浜哹ookstrap妗嗘灦鍜屼竴浜沯s浠ｇ爜锛屾杩庡ぇ瀹剁暀瑷€浜ゆ祦锛?
                             </p>
                         </div>
                     </div>
@@ -80,13 +80,13 @@
                     <form class="text-center mt-5">
                         <input autocomplete="off" autofocus id = 'name' placeholder="name" type = "text">
 
-                        <input type="submit" class = "btn btn-primary btn-lg" value="提交">
+                        <input type="submit" class = "btn btn-primary btn-lg" value="鎻愪氦">
                     </form>
                     <div class="card mt-5 mx-auto text-center shadow-sm" style="max-width: 600px;">
                     <div class="card body">
-                        <p class="fs-5 mb-3" id="quote-id">抽取今日角色台词</p>
+                        <p class="fs-5 mb-3" id="quote-id">鎶藉彇浠婃棩瑙掕壊鍙拌瘝</p>
                         <footer class="blockquote-footer" id="quote-author" style="display: none;"></footer>
-                        <button class="btn btn-outline-success mt-3" id="generate-btn">🎲 抽取台词</button>
+                        <button class="btn btn-outline-success mt-3" id="generate-btn">馃幉 鎶藉彇鍙拌瘝</button>
                     </div>
                 </div>
         </div>
